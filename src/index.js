@@ -1,10 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { App } from 'components/App';
-import './index.css';
+const el1 = <span>hey</span>;
+const el2 = <span>world</span>;
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+const jsxEl = (
+  <div>
+    {el1}
+    {el2}
+  </div>
 );
+console.log(jsxEl);
+
+// ReactDOM.render(element, document.querySelector('#root'));
